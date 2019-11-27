@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block conten %}
+<div class="content-box"><!-- Start Content Box -->
+				
+<div class="content-box-header">
+	
+	<h3>Crear ficha</h3>
+	
+	<div class="clear"></div>
+	
+</div> <!-- End .content-box-header -->
+
+<div class="content-box-content">					
+	<div class="tab-content default-tab" id="tab2">
+	
+		<form action="#" method="post">
+			
+			<fieldset> <!-- Set class to "column-left" or "column-right" on fieldsets to divide the form into columns -->
+				
+				<p>
+					<label>Nombre paciente</label>
+						<input class="text-input small-input" type="text" id="small-input" name="small-input" />  <!-- Classes for input-notification: success, error, information, attention -->
+
+				</p>
+				<p>
+					<label>Rut paciente</label>
+						<input class="text-input small-input" type="text" id="small-input" name="small-input" />  <!-- Classes for input-notification: success, error, information, attention -->
+
+				</p>
+				
+				<p>
+					<label>Gravedad del paciente</label>              
+					<select name="dropdown" class="small-input">
+						<option value="option1">1</option>
+						<option value="option2">2</option>
+						<option value="option3">3</option>
+						<option value="option4">4</option>
+					</select> 
+				</p>
+				
+				<p>
+					<label>Diagnostico del paciente</label>
+					<textarea class="text-input" id="textarea" name="textfield" cols="79" rows="15"></textarea>
+				</p>
+				
+				<p>
+					<input class="button" type="submit" value="Ingresar" />
+				</p>
+				
+			</fieldset>
+			
+			<div class="clear"></div><!-- End .clear -->
+			
+		</form>
+		
+	</div> <!-- End #tab2 -->        
+	
+</div> <!-- End .content-box-content -->
+
+</div> <!-- End .content-box -->
+{% endblock %}
